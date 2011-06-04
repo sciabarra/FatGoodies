@@ -1,0 +1,31 @@
+<html>
+<head>
+ <script type="text/javascript" 
+  src="jquery.min.js">
+ </script>
+ <script type="text/javascript">
+
+  var csUrl = "http://localhost:8080/cs/ContentServer"
+	+ "?pagename=OpenMarket/Xcelerate/Actions/RemoteContentPost"
+	+ "&authusername=fwadmin&authpassword=xceladmin"
+
+  function createAsset(fromFile, toUrl) {
+     $.getJSON(fromFile, function(data) {
+	$.post(toUrl, data, function(result) {
+		alert(result)
+	})
+     })
+  }
+	
+ </script>
+</head>
+<body>
+
+<input type="button" value="Create Home Page"
+  onClick="createAsset('Page/fpHome.json',csUrl)"/>
+<input type="button" value="Create fpTitle"
+  onClick="createAsset('fp_A/fpTitle.json',csUrl)"/>
+<input type="button" value="Create fpCD"
+  onClick="createAsset('fp_CD/fpText.json',csUrl)"/>
+</body>
+</html>
