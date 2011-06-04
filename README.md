@@ -3,26 +3,26 @@ from my [Fatwire blog](http://www.sciabarra.com/fatwire).
 
 #### Javascript interface to CatalogManager
 
-[code](FatGoodies/catalogmanager)
+[code](https://github.com/sciabarra/FatGoodies/tree/master/catalogmanager)
 [post](http://www.sciabarra.com/fatwire/2011/02/06/a-javascript-interface-to-catalogmanager/)
 
 #### Database Manager for JumpStart
 
-[code](FatGoodies/jsk-dbman)
+[code](https://github.com/sciabarra/FatGoodies/tree/master/jsk-dbman)
 [post](http://www.sciabarra.com/fatwire/2011/04/07/database-manager-for-jumpstart/)
 
 #### Post in JSON
 
-[code](FatGoodies/jsonpost)
+[code](https://github.com/sciabarra/FatGoodies/tree/master/jsonpost)
 [post](http://www.sciabarra.com/fatwire/2011/01/21/create-a-new-asset-using-json-and-jquer/)
 
 #### Improving the FirstSiteII UrlAssembler
 
-[code](FatGoodies/assemblerhelper)
+[code](https://github.com/sciabarra/FatGoodies/tree/master/assemblerhelper)
 [post](http://www.sciabarra.com/fatwire/2011/04/17/improving-the-firstsiteii-url-assembler/)
 
 #### Simple Preview
 
-[code](FatGoodies/simplepreview)
+[code](https://github.com/sciabarra/FatGoodies/tree/master/simplepreview)
 [post](http://www.sciabarra.com/fatwire/2011/05/30/customizing-the-preview/)
 
