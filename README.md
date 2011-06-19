@@ -31,4 +31,3 @@ from my [Fatwire blog](http://www.sciabarra.com/fatwire).
 [code](https://github.com/sciabarra/FatGoodies/tree/master/fatphone-connect)
 
 A simple iphone application that can connect to FatPhone in Json.
-
