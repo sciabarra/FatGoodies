@@ -1,0 +1,6 @@
+cs=http://localhost/cs
+username=fwadmin
+password=xceladmin
+element=web/Element
+cselement=web/CSElement
+template=web/Template
