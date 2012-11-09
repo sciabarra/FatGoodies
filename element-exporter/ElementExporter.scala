@@ -65,14 +65,16 @@ class ElementExporter(val host: String, val user: String, val pass: String) {
 object ElementExporter {
 
   def main(args: Array[String]) = {
-    
+
+	args.foreach(println)
+	
     val me = new ElementExporter(args(0)+":"+args(1), args(2), args(3))
     
     println(me.login)
 
     val table = me.select
     
-    val dir = new java.io.File(args(0).replace(":", "/"))
+    val dir = new java.io.File(args(0)+"-"+args(1))
     dir.mkdirs()
 
     //println(table)
@@ -87,11 +89,17 @@ object ElementExporter {
          
         println("%s (%s)".format(ls(0), body.size))
        
-        val file = new File(dir, "./"+ls(0))
-               
-        val fw = new java.io.FileWriter(file)        
-        fw.write(body)
-        fw.close
+	    try {
+			val file = new File(dir, "./"+ls(0))
+			file.getParentFile.mkdirs
+				   
+			val fw = new java.io.FileWriter(file)        
+			fw.write(body)
+			fw.close
+		} catch {
+		    case e => println("Exception: "+e)
+		}
+	
                         
       }
       // println(vv+vv.size)
