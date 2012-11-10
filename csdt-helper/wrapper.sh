@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 # configure here:
-url=http://localhost:8380/cs/ContentServer
+url=http://localhost:8080/cs/ContentServer
 user=fwadmin
 pass=xceladmin
 site=avisports
