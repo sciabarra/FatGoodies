@@ -2,7 +2,7 @@
 cmd=${1:?invoke script required}
 sel=${2:-@ALL_ASSETS}
 force=${3:-n}
-bash $cmd $sel listcs |  tail -n +5 | grep -F '|||' | awk '{ print $1 ":" $3 }' | while read a
+bash $cmd "$sel" listcs |  tail -n +5 | grep -F '|||' | awk '{ print $1 ":" $3 }' | while read a
 do 
   out=out/${1%%.sh}/${a/:/\/}
   if test "$force" = "-f" ; then rm $out ; fi
@@ -11,6 +11,7 @@ do
   else
       echo "+++ $a exporting +++"
       mkdir -p $(dirname $out)
-      bash $cmd $a export | tee $out
+      bash $cmd $a export | tee tmp$$
+      mv tmp$$ $out
   fi
 done

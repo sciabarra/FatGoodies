@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 # configure here:
 url=http://localhost:8080/cs/ContentServer
 user=fwadmin
