@@ -9,6 +9,6 @@ site=avisports
 sys=unix
 #sys=win
 #leave as it is here:
-cmd=${1:-listcs}
-res=${2:-@ALL_ASSETS}
+cmd=${2:-listcs}
+res=${1:-@ALL_ASSETS}
 ./csdt-$sys.sh $url cmd="$cmd" username=$user password=$pass fromSites=$site resources="$res"
