@@ -149,6 +149,7 @@ object SiteCmp {
 
   def dumpById(id: String): Option[String] = {
     val file = new File(dir, "Page_" + id + ".html")
+           
     import org.jsoup.Jsoup
     try {
       me.retrieve(id) match {
@@ -168,12 +169,15 @@ object SiteCmp {
           dom.select("tr.trUltraLight + tr ").remove()
           dom.select("tr.trUltraLight").remove()
           
-
           val out = dom.toString
           val fw = new java.io.FileWriter(file)
           fw.write(out)
           fw.close
           println("%s (%d) ".format(id, out.size))
+          
+          
+          
+          
           Some(id)
         //tidy(file)          
         case None =>
